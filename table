@@ -1,0 +1,60 @@
+getgenv().angel  = { 
+    Silent = {
+        Enabled     = true,
+        Part        = "Head"
+        ClosestPart = true,
+ 
+		PredictMovement    = true,
+        PredictionVelocity = 0.102421,
+ 
+        AntiGroundShots = true,
+ 
+        WallCheck   = true,
+        CheckIf_KO  = true,
+	},
+    SilentFOV = {
+        Visible = false,
+        Radius  = 50,
+    },
+    Tracer = {
+        Key =   "C",
+        Enabled = true,
+        Part    = "HumanoidRootPart",
+        ClosestPart = false,
+ 
+		DisableTargetDeath = true,
+		DisableLocalDeath  = true,
+ 
+        UseCircleRadius      = false,
+        DisableOutSideCircle = false,
+ 
+		UseShake   = false,
+		ShakeValue = 5,
+ 
+		PredictMovement    = true,
+        PredictionVelocity = 0.146,
+ 
+        WallCheck  = true,
+        CheckIf_KO = false,
+ 
+        Smoothness = 0.005,
+    },
+    TracerFOV = {
+        Visible = false,
+        Radius  = 55,
+    },
+    GunFOV =  {
+        Enabled = true,-- // Gun Fov / fov is automatically changed to specific gun equipped
+        ["Double-Barrel SG"] = {["FOV"] = 20}, -- DB
+        ["Revolver"] = {["FOV"] = 25}, -- rev
+        ["TacticalShotgun"] = {["FOV"] = 30} -- rev
+	},
+ 
+	Both = {
+		DetectDesync    = true,
+		DesyncDetection = 50,
+ 
+        UnderGroundResolver    = true,
+ 
+	},
+}
