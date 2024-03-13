@@ -1,0 +1,4 @@
+print("key being passed")
+script_key = getgenv().angel['Key'][1]
+print("key passed")
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f5aadf25c8001bb52641c648a519be2f.lua"))()
